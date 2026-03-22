@@ -1,0 +1,41 @@
+body {
+    background-color: #1A1714;
+    margin: 0;
+
+}
+
+header {
+    background-color: #0D0D0D;
+    padding: 20px;
+    border-bottom: 2px solid #B8860B;
+    h1 {
+        text-align: center;
+        color: #B8860B;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #EADDCA;
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header nav a:hover {
+    color: #8B0000;
+    transition: 1s;
+}
