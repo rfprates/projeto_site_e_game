@@ -1,0 +1,89 @@
+body {
+    background-color: #1A1714;
+    margin: 0;
+}
+
+header {
+    background-color: #0D0D0D;
+    padding: 20px;
+    border-bottom: 2px solid #B8860B;
+    h1 {
+        text-align: center;
+        color: #B8860B;
+        text-transform: uppercase;
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #EADDCA;
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 1s;
+}
+
+header nav a:hover {
+    color: #8B0000;
+}
+
+main {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;   
+    padding: 20px;
+    margin: 20px;
+    h1 {
+        color: #8B0000;
+        text-align: center;
+    }
+    p {
+        color: #B8860B;
+        text-align: justify;
+    }
+
+}
+
+
+footer {
+    background-color: #0A0A0A;
+    padding: 20px;
+    border-top: 2px solid #B8860B;
+    color: #EADDCA;
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    p {
+        margin-top: 20px;
+        text-align: center;
+        color: #888;       
+        font-size: 10px;
+    }
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+footer nav a {
+    text-decoration: none;
+    transition: 1s;
+    color: #EADDCA;
+}
+
+footer nav a:hover {
+    color: #8B0000;
+}
