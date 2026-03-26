@@ -1,3 +1,10 @@
+* {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
+
 body {
     background-color: #1A1714;
     margin: 0;
@@ -11,9 +18,6 @@ header {
         text-align: center;
         color: #B8860B;
         text-transform: uppercase;
-        font-family: "Eagle Lake", serif;
-        font-weight: 400;
-        font-style: normal;
         font-size: 40px;
     }
 }
@@ -28,9 +32,6 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #EADDCA;
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
     transition: 1s;
 }
 
@@ -38,10 +39,7 @@ header nav a:hover {
     color: #8B0000;
 }
 
-main {
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;   
+main {  
     padding: 20px;
     margin: 20px;
     h1 {
@@ -52,18 +50,55 @@ main {
         color: #B8860B;
         text-align: justify;
     }
-
+    .container-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px auto;
+        padding: 20px;
+        .item-lista {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .imagem-placeholder {
+                width: 500px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }       
+            }
+            .texto-conteudo {
+                color: #EADDCA;
+                text-align: justify;
+                h2 {
+                    font-weight: 600;
+                    text-align: center;
+                    color: #B8860B;
+                }
+                li {
+                    margin-bottom: 20px;
+                }
+                
+                li:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
-
 
 footer {
     background-color: #0A0A0A;
     padding: 20px;
     border-top: 2px solid #B8860B;
     color: #EADDCA;
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
     p {
         margin-top: 20px;
         text-align: center;
