@@ -38,6 +38,43 @@ header nav a:hover {
     color: #8B0000;
 }
 
+.banner {
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+    .botao-jogar {
+        position: absolute;
+        z-index: 10;
+        font-size: 20px;
+        background-color: #8B0000;
+        color: #EADDCA;
+        padding: 15px 30px;
+        text-decoration: none;
+        border: 2px solid #B8860B;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+}
+
+main {
+    margin: 30px 100px;
+    .grid-handson {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        .imagens {
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
 
 footer {
     background-color: #0A0A0A;
