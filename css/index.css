@@ -1,6 +1,5 @@
 * {
     font-family: "Eagle Lake", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -54,25 +53,53 @@ header nav a:hover {
         font-size: 20px;
         background-color: #8B0000;
         color: #EADDCA;
-        padding: 15px 30px;
+        font-weight: bold;
+        padding: 15px 15px;
         text-decoration: none;
         border: 2px solid #B8860B;
         text-transform: uppercase;
-        transition: 0.5s;
+        transition: 1s;
+    }
+    .botao-jogar:hover {
+        background-color: #B8860B;
+        color: #1A1714;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    .coluna {
+        margin: 0px;
+        .card {
+            padding: 35px;
+            text-align: center;
+            img {
+                width: 230px;
+                height: 250px;
+            }
+            h2 {
+                color: #EADDCA;
+            }
+            p {
+                color: #B8860B;
+                text-align: justify;
+            }
+        }
     }
 }
 
 main {
     margin: 30px 100px;
-    .grid-handson {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        .imagens {
-            img {
-                width: 100%;
-                border-radius: 10px;
-            }
-        }
+    h1 {
+        color: #EADDCA;
+        text-align: center;
+        padding: 5px;
+    }
+    p {
+        padding: 20px;
+        color: #B8860B;
+        text-align: justify;
     }
 }
 
