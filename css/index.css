@@ -154,6 +154,31 @@ footer nav a:hover {
         padding: 5px;
     }
 
+    .banner {
+        .botao-jogar {
+            font-size: 10px;
+            padding: 6px 6px;
+            border-width: 1px;
+        }
+    }
+    
+    .grid {
+        grid-template-columns: 100%;
+        .coluna {
+            .card {
+                padding: 20px;
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    main {
+        margin: 20px 50px;
+    }
+
     footer {
         padding: 15px 10px;
     }
