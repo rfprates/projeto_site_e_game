@@ -38,10 +38,18 @@ header nav a:hover {
 }
 
 main {
-    margin: 30px 100px;
+    margin: 40px 200px;
+    padding-bottom: 10px;
+    background-color: #888;
+    border: 2px solid #B8860B;
+    border-radius: 20px;
+    color: #1A1714;
+    p {
+        text-align: justify;
+        margin: 30px;
+    }
     .dev-imagem {
         margin-top: 40px;
-        padding: 40px;
         text-align: center;
         img {
             width: 300px;
@@ -51,6 +59,8 @@ main {
     }
     .link-contato {
         margin-bottom: 10px;
+        padding-left: 30px;
+        padding-bottom: 10px;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -60,7 +70,7 @@ main {
         }
         a {
             text-decoration: none;
-            color: #EADDCA;
+            color: #1A1714;
         }
     }
 }
@@ -117,7 +127,13 @@ footer nav a:hover {
     }
     
     main {
-        margin: 20px 50px;
+        margin: 40px 30px;
+        .dev-imagem {
+            margin-top: 40px;
+            img {
+                width: 150px;
+            }
+        }
     }
 
     footer {
