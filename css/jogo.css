@@ -43,10 +43,28 @@ main {
         margin-top: 20px;
         margin-bottom: 40px;
     }
+    p.botao {
+        text-align: center;
+        .botao-avaliar {
+            font-size: 20px;
+            background-color: #8B0000;
+            color: #EADDCA;
+            padding: 15px 15px;
+            text-decoration: none;
+            border: 2px solid #B8860B;
+            text-transform: uppercase;
+            transition: 1s;
+        }
+        .botao-avaliar:hover {
+            background-color: #B8860B;
+            color: #1A1714;
+        }
+    }
     .manual-arcade {
         background-color: #111;
         border: 2px dashed #B8860B;
         border-radius: 20px;
+        margin-top: 50px;
         h1 {
             text-align: center;
             color: #8B0000;
@@ -133,6 +151,13 @@ footer nav a:hover {
     
     main {
         margin: 40px 30px;
+        p.botao {
+            .botao-avaliar {
+                font-size: 15px;
+                padding: 6px 6px;
+                border-width: 1px;
+            }
+        }
         .manual-arcade {
             .grid {
                 display: grid;
