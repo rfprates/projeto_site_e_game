@@ -38,8 +38,47 @@ header nav a:hover {
 }
 
 main {
-    margin: 30px 100px;
-}
+    margin: 40px 100px;
+    p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .manual-arcade {
+        background-color: #111;
+        border: 2px dashed #B8860B;
+        border-radius: 20px;
+        h1 {
+            text-align: center;
+            color: #8B0000;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .coluna {
+                margin: 0px;
+                .card {
+                    padding: 30px;
+                    color: #B8860B;
+                    text-align: center;
+                    img {
+                        width: 230px;
+                        height: 250px;
+                    }
+                    h2 {
+                        color: #EADDCA;
+                    }
+                    ul {
+                        list-style: none;
+                        text-align: justify;
+                        padding: 0px;
+                    }                
+                }
+            }
+        }
+    }
+}    
 
 footer {
     background-color: #0A0A0A;
@@ -93,7 +132,22 @@ footer nav a:hover {
     }
     
     main {
-        margin: 20px 50px;
+        margin: 40px 30px;
+        .manual-arcade {
+            .grid {
+                display: grid;
+                grid-template-columns: 100%;
+                .coluna {
+                    .card {
+                        padding: 20px;     
+                        img {
+                            width: 150px;
+                            height: 160px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     footer {
