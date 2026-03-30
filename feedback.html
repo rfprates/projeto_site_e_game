@@ -34,9 +34,62 @@
         </header>
         
         <main>
-            <p>
-                Teste
-            </p>
+            <h1>Formulário de Experiência do Usuário</h1>
+            <form name="form-avaliacao" method="post">
+                <label for="nome">Digite seu nome:</label>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    size="50" 
+                    maxlength="40" 
+                    placeholder="Nome completo"
+                    autocomplete="off"
+                    required
+                    class="formulario"
+                >
+                <br>
+                <label for="email">Digite seu e-mail:</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"  
+                    maxlength="50" 
+                    placeholder="Digite um e-mail válido"
+                    autocomplete="off"
+                    required
+                    class="formulario"
+                    inputmode="email"
+                >
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input 
+                    type="date" 
+                    name="dataNascimento" 
+                    id="dataNascimento"  
+                    autocomplete="off"
+                    required
+                    class="formulario"
+                >
+                <label for="estadoCivil">Estado Civil:</label>
+                <select name="estadoCivil" class="formulario">
+                    <option value="">Selecione uma opção</option>
+                    <option value="C">Casado</option>
+                    <option value="S">Solteiro</option>
+                </select>
+                <br><br>
+                <label for="notaJogo">Selecione a nota que você atribui ao jogo:</label>
+                <input type="radio" name="notaJogo" value="1"> Péssimo
+                <input type="radio" name="notaJogo" value="2"> Ruim
+                <input type="radio" name="notaJogo" value="3"> Ok
+                <input type="radio" name="notaJogo" value="4"> Bom
+                <input type="radio" name="notaJogo" value="5"> Ótimo
+                <br><br>
+                <label for="mensagem">Caso queira, deixe um comentário explicando mais de sua experiência ao jogar!</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe seu comentário" rows="4" class="formulario"></textarea>
+                <br><br>
+                <button type="submit" class="btn-submit">Enviar Dados</button>
+                <button type="reset" class="btn-reset">Redefinir</button>
+            </form>
         </main>
     
         <footer>
