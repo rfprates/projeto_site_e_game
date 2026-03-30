@@ -39,6 +39,54 @@ header nav a:hover {
 
 main {
     margin: 30px 100px;
+    h1 {
+        text-align: center;
+        color: #8B0000;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+.formulario {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #1A1714;
+    border: 2px solid #B8860B;
+}
+
+.formulario:focus {
+    background: #888;
+}
+
+label, .formulario {
+    margin: 10px 0px;
+}
+
+label {
+    color: #B8860B;
+}
+
+.btn-submit, .btn-reset {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s;
+    color: #1A1714;
+}
+
+.btn-submit:hover {
+    background-color: #B8860B;
+}
+
+.btn-reset:hover {
+    background-color: #8B0000;
+    color: #EADDCA;
 }
 
 footer {
@@ -95,6 +143,15 @@ footer nav a:hover {
     main {
         margin: 20px 50px;
     }
+
+    .pergunta-avaliacao {
+        display: flex;
+        flex-direction: column;
+    }
+    .pergunta-avaliacao input {
+            display: flex;
+            align-items: center;
+        }
 
     footer {
         padding: 15px 10px;
