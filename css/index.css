@@ -46,6 +46,7 @@ header nav a:hover {
     align-items: center;
     img {
         width: 100%;
+        opacity: 0.4;
     }
     .botao-jogar {
         position: absolute;
