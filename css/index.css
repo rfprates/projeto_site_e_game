@@ -61,12 +61,12 @@ header nav a:hover {
 }
 
 body.light-mode {
-    background-color: #F5F5DC; /* Fundo Bege Claro */
+    background-color: #F5F5DC;
 }
 
 body.light-mode header, 
 body.light-mode footer {
-    background-color: #D2B48C; /* Header/Footer mais escuros que o fundo */
+    background-color: #D2B48C;
     border-color: #8B0000;
 }
 
@@ -76,7 +76,7 @@ body.light-mode p,
 body.light-mode .grid .coluna .card h2,
 body.light-mode .grid .coluna .card p,
 body.light-mode .info-jogo li {
-    color: #1A1714; /* Texto Escuro para leitura */
+    color: #1A1714;
 }
 
 body.light-mode header nav a,
