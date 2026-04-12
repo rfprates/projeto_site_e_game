@@ -23,14 +23,21 @@
     <body>
         
         <header>
+            
             <h1><strong>Valthorgard: O Despertar do Déspota</strong></h1>
+            
             <nav>
                 <a href="index.html" title="Home">Home</a>
                 <a href="jogo.html" title="Jogar">Jogar</a>
                 <a href="feedback.html" title="Feedback">Feedback</a>
                 <a href="historia.html" title="História & Fases">História & Fases</a>
                 <a href="desenvolvedor.html" title="Desenvolvedor">Desenvolvedor</a>
-            </nav>        
+            </nav>
+            
+            <button id="alternar-tema" class="botao-tema" title="Alternar Tema">
+                <span id="tema-icone">🌙</span>
+            </button>
+
         </header>
         
         <main>
@@ -96,27 +103,6 @@
 
                 <div class="item-lista">
                     <div class="imagem-placeholder">
-                        <img src="imgs/background_level2.png" alt="Fase 2 do Jogo" title="Fase 2 do Jogo">   
-                    </div>
-                    <div class="texto">
-                        <h2>As Entranhas do Castelo de Malphas</h2>
-                        <p>
-                            <ul>
-                                <li>
-                                    Cenário: Nesta etapa os irmãos adentram as profundezas do Castelo de Malphas, um ambiente opressivo em ruínas e 
-                                    carregado de mistério. Entre vitrais estilhaçados e imponentes arcos de pedra, o cenário é marcado por vestígios sangrentos 
-                                    que criam uma atmosfera de puro suspense, desafiando a coragem de quem ousa explorar o coração desta fortaleza das trevas.
-                                </li>
-                                <li>
-                                    Inimigos: Esqueletos arqueiros e Minotauros fortes e imponentes.
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="item-lista">
-                    <div class="imagem-placeholder">
                         <img src="imgs/background_level3.png" alt="Fase 3 do Jogo" title="Fase 3 do Jogo">
                     </div>
                     <div class="texto">
@@ -150,5 +136,26 @@
                     Este projeto foi desenvolvido para fins de aprendizado em Desenvolvimento Web/Frontend e Low-Code. Toda a história e personagens aqui citados são fictícios, criados via Inteligência Artificial.
                 </p>
         </footer>
+
+        <script>
+
+            const botaoTema = document.getElementById("alternar-tema");
+            const iconeTema = document.getElementById("tema-icone");
+            const corpoPagina = document.body;
+
+            if (localStorage.getItem("tema") === "claro") {
+                corpoPagina.classList.add("light-mode");
+                iconeTema.innerText = "☀️";
+            }
+
+            botaoTema.addEventListener("click", () => {
+                corpoPagina.classList.toggle("light-mode");
+                const eTemaClaro = corpoPagina.classList.contains("light-mode");
+                localStorage.setItem("tema", eTemaClaro ? "claro" : "escuro");
+                iconeTema.innerText = eTemaClaro ? "☀️" : "🌙";
+            });
+
+        </script>
+        
     </body>
 </html>
