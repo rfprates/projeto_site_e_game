@@ -23,14 +23,21 @@
     <body>
         
         <header>
+            
             <h1><strong>Valthorgard: O Despertar do Déspota</strong></h1>
+            
             <nav>
                 <a href="index.html" title="Home">Home</a>
                 <a href="jogo.html" title="Jogar">Jogar</a>
                 <a href="feedback.html" title="Feedback">Feedback</a>
                 <a href="historia.html" title="História & Fases">História & Fases</a>
                 <a href="desenvolvedor.html" title="Desenvolvedor">Desenvolvedor</a>
-            </nav>        
+            </nav>
+            
+            <button id="alternar-tema" class="botao-tema" title="Alternar Tema">
+                <span id="tema-icone">🌙</span>
+            </button>
+
         </header>
         
         <main>
@@ -71,5 +78,26 @@
                     Este projeto foi desenvolvido para fins de aprendizado em Desenvolvimento Web/Frontend e Low-Code. Toda a história e personagens aqui citados são fictícios, criados via Inteligência Artificial.
                 </p>
         </footer>
+
+        <script>
+
+            const botaoTema = document.getElementById("alternar-tema");
+            const iconeTema = document.getElementById("tema-icone");
+            const corpoPagina = document.body;
+
+            if (localStorage.getItem("tema") === "claro") {
+                corpoPagina.classList.add("light-mode");
+                iconeTema.innerText = "☀️";
+            }
+
+            botaoTema.addEventListener("click", () => {
+                corpoPagina.classList.toggle("light-mode");
+                const eTemaClaro = corpoPagina.classList.contains("light-mode");
+                localStorage.setItem("tema", eTemaClaro ? "claro" : "escuro");
+                iconeTema.innerText = eTemaClaro ? "☀️" : "🌙";
+            });
+
+        </script>
+        
     </body>
 </html>
