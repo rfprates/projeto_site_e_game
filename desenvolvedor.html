@@ -81,6 +81,17 @@
 
         <script>
 
+            const idadeSalva = localStorage.getItem("idadeUsuario");
+            const linksBloqueados = document.querySelectorAll('a[href="jogo.html"]');
+
+            if (idadeSalva < 6) {
+                linksBloqueados.forEach(link => {
+                    link.style.pointerEvents = "none";
+                    link.style.filter = "blur(10px)";
+                    link.style.cursor = "not-allowed";
+                });
+            }            
+
             const botaoTema = document.getElementById("alternar-tema");
             const iconeTema = document.getElementById("tema-icone");
             const corpoPagina = document.body;

@@ -139,7 +139,10 @@
 
             let nomeVisitante = prompt("Bem-vindo! Como é o seu nome?");
             let idadeVisitante = prompt("Olá "+nomeVisitante+"! Qual a sua idade?");
-
+            
+            let idadeUser = localStorage.getItem("idadeUsuario");
+            localStorage.setItem("idadeUsuario", idadeVisitante)
+            
             const linksJogar = document.querySelectorAll('a[href="jogo.html"]');
 
             if (idadeVisitante >= 6) {
@@ -148,7 +151,7 @@
                     link.style.pointerEvents = "auto";
                 });
             } else {
-                alert("Lamentamos "+nomeVisitante+". Por segurança, você não poderá acessar o jogo.");
+                alert("Lamentamos "+nomeVisitante+", a idade mínima para jogar é de 6 anos. Por isso, você não poderá acessar o jogo, mas ainda poderá navegar pelas demais páginas.");
                 linksJogar.forEach(link => {
                     link.style.pointerEvents = "none";
                     link.style.filter = "blur(10px)";
