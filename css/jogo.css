@@ -60,12 +60,12 @@ header nav a:hover {
 }
 
 body.light-mode {
-    background-color: #F5F5DC; /* Fundo Bege Claro */
+    background-color: #F5F5DC;
 }
 
 body.light-mode header, 
 body.light-mode footer {
-    background-color: #D2B48C; /* Header/Footer mais escuros que o fundo */
+    background-color: #D2B48C;
     border-color: #8B0000;
 }
 
